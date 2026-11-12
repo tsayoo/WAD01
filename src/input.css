@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Poppins, Arial, Helvetica, sans-serif;
+  --color-navy: #2d3250;
+  --color-ink: #1b2340;
+  --color-haze: #718fa9;
+  --color-plum: #424769;
+  --color-mint: #f3fff4;
+}

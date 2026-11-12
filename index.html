@@ -4,88 +4,161 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pawzitive Care</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dist/output.css" />
   </head>
-  <body>
-    <header>
-      <a href="#atas" class="logo">
-        <img src="img/logo.png" alt="Logo Pawzitive Care" />
+  <body class="font-sans leading-relaxed text-navy">
+    <header
+      class="flex flex-col items-center gap-4 bg-navy px-12 py-4 text-center text-white md:flex-row md:justify-between"
+    >
+      <a href="#atas" class="flex items-center gap-2.5 text-xl font-bold">
+        <img
+          src="img/logo.png"
+          alt="Logo Pawzitive Care"
+          class="size-8 rounded-md"
+        />
         <span>Pawzitive Care</span>
       </a>
       <nav>
-        <ul>
-          <li><a href="#tentang">Tentang</a></li>
-          <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#galeri">Galeri</a></li>
-          <li><a href="#kontak">Kontak</a></li>
+        <ul class="flex gap-6">
+          <li>
+            <a href="#tentang" class="hover:text-mint hover:underline"
+              >Tentang</a
+            >
+          </li>
+          <li>
+            <a href="#layanan" class="hover:text-mint hover:underline"
+              >Layanan</a
+            >
+          </li>
+          <li>
+            <a href="#galeri" class="hover:text-mint hover:underline">Galeri</a>
+          </li>
+          <li>
+            <a href="#kontak" class="hover:text-mint hover:underline">Kontak</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main id="atas">
-      <section id="tentang" class="section-terang">
-        <div class="teks-tentang">
-          <h1>Sahabat terbaik untuk hewan kesayanganmu</h1>
+      <section
+        id="tentang"
+        class="flex flex-col items-stretch gap-6 bg-haze pt-12 text-center text-ink md:flex-row md:items-end md:justify-between md:gap-12 md:pt-18 md:pl-12 md:text-left"
+      >
+        <div
+          class="max-w-120 flex-1 self-stretch px-6 md:self-center md:px-0 md:pb-18"
+        >
+          <h1 class="mb-4 text-[32px] leading-[1.2] font-bold md:text-[44px]">
+            Sahabat terbaik untuk hewan kesayanganmu
+          </h1>
           <p>
             Pawzitive Care adalah layanan perawatan hewan peliharaan. Kami
             pecinta hewan yang siap membantu menjaga kesehatan dan kenyamanan
             peliharaanmu setiap hari.
           </p>
-          <a href="#layanan" class="tombol">Lihat Layanan</a>
+          <a
+            href="#layanan"
+            class="mt-6 inline-block rounded-full border-2 border-ink px-6 py-2.5 font-bold hover:bg-ink hover:text-white"
+            >Lihat Layanan</a
+          >
         </div>
         <img
           src="img/hero.jpg"
           alt="Kucing dan anjing tersenyum"
-          class="gambar-tentang"
+          class="w-full max-w-105 flex-none self-end md:max-w-115 md:flex-1"
         />
       </section>
 
-      <section id="layanan" class="section-putih">
-        <h2>Layanan Kami</h2>
-        <div class="daftar-layanan">
-          <article>
-            <img src="img/dokter.png" alt="Konsultasi dokter" />
-            <h3>Konsultasi Dokter</h3>
+      <section id="layanan" class="bg-white px-12 py-18 text-center">
+        <h2 class="mb-8 text-[28px] font-bold">Layanan Kami</h2>
+        <div
+          class="flex flex-col items-center justify-center gap-6 md:flex-row md:items-stretch"
+        >
+          <article
+            class="w-full max-w-75 rounded-lg border-2 border-plum p-6 md:flex-1"
+          >
+            <img
+              src="img/dokter.png"
+              alt="Konsultasi dokter"
+              class="mx-auto mb-3 size-24"
+            />
+            <h3 class="mb-2 text-lg font-bold">Konsultasi Dokter</h3>
             <p>Periksa kondisi peliharaanmu bersama dokter hewan terpercaya.</p>
           </article>
-          <article>
-            <img src="img/penitipan.png" alt="Penitipan hewan" />
-            <h3>Penitipan Hewan</h3>
+          <article
+            class="w-full max-w-75 rounded-lg border-2 border-plum p-6 md:flex-1"
+          >
+            <img
+              src="img/penitipan.png"
+              alt="Penitipan hewan"
+              class="mx-auto mb-3 size-24"
+            />
+            <h3 class="mb-2 text-lg font-bold">Penitipan Hewan</h3>
             <p>Titipkan peliharaanmu saat liburan, kami jaga sepenuh hati.</p>
           </article>
-          <article>
-            <img src="img/toko.png" alt="Kebutuhan hewan" />
-            <h3>Kebutuhan Hewan</h3>
+          <article
+            class="w-full max-w-75 rounded-lg border-2 border-plum p-6 md:flex-1"
+          >
+            <img
+              src="img/toko.png"
+              alt="Kebutuhan hewan"
+              class="mx-auto mb-3 size-24"
+            />
+            <h3 class="mb-2 text-lg font-bold">Kebutuhan Hewan</h3>
             <p>Makanan dan perlengkapan hewan dengan harga terjangkau.</p>
           </article>
         </div>
       </section>
-      <section id="galeri" class="section-galeri">
-        <h2>Galeri Pawzy</h2>
-        <div class="daftar-galeri">
-          <img src="img/galeri-1.jpg" alt="Kucing digendong" />
-          <img src="img/galeri-2.jpg" alt="Resepsionis Pawzitive Care" />
-          <img src="img/galeri-3.jpg" alt="Area bermain hewan" />
-          <img src="img/galeri-4.jpg" alt="Dua anak kucing" />
+
+      <section id="galeri" class="bg-mint px-12 py-18 text-center">
+        <h2 class="mb-8 text-[28px] font-bold">Galeri Pawzy</h2>
+        <div class="flex flex-wrap justify-center gap-4 md:flex-nowrap">
+          <img
+            src="img/galeri-1.jpg"
+            alt="Kucing digendong"
+            class="h-50 min-w-0 flex-[0_0_calc(50%-8px)] rounded-lg object-cover md:h-65 md:max-w-59 md:flex-1"
+          />
+          <img
+            src="img/galeri-2.jpg"
+            alt="Resepsionis Pawzitive Care"
+            class="h-50 min-w-0 flex-[0_0_calc(50%-8px)] rounded-lg object-cover md:h-65 md:max-w-59 md:flex-1"
+          />
+          <img
+            src="img/galeri-3.jpg"
+            alt="Area bermain hewan"
+            class="h-50 min-w-0 flex-[0_0_calc(50%-8px)] rounded-lg object-cover md:h-65 md:max-w-59 md:flex-1"
+          />
+          <img
+            src="img/galeri-4.jpg"
+            alt="Dua anak kucing"
+            class="h-50 min-w-0 flex-[0_0_calc(50%-8px)] rounded-lg object-cover md:h-65 md:max-w-59 md:flex-1"
+          />
         </div>
       </section>
     </main>
 
-    <footer id="kontak">
-      <div class="footer-kiri">
-        <a href="#atas" class="logo">
-          <img src="img/logo.png" alt="Logo Pawzitive Care" />
+    <footer
+      id="kontak"
+      class="flex flex-col items-center gap-4 bg-navy px-12 py-10 text-center text-white md:flex-row md:items-start md:justify-between md:gap-8"
+    >
+      <div class="flex-1">
+        <a href="#atas" class="flex items-center gap-2.5 text-xl font-bold">
+          <img
+            src="img/logo.png"
+            alt="Logo Pawzitive Care"
+            class="size-8 rounded-md"
+          />
           <span>Pawzitive Care</span>
         </a>
       </div>
-      <div class="footer-tengah">
+      <div class="flex-1">
         <p>
           Website sederhana untuk mengenalkan layanan perawatan hewan peliharaan
           dari Pawzitive Care.
         </p>
       </div>
-      <div class="footer-kanan">
-        <p>halo@Pawzcare.id</p>
-        <p>Instagram: @Pawzcare</p>
+      <div class="flex-1 md:text-right">
+        <p>halo@Pawzy.id</p>
+        <p>Instagram: @Pawzycare</p>
         <p>Jakarta, Indonesia</p>
       </div>
     </footer>
